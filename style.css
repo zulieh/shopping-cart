@@ -11,3 +11,22 @@ font-family: 'Poppins', sans-serif; */
     margin: auto;
     text-align: center;
 }
+svg{
+    width: 40px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;  
+}
+header .cart-icon span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+}
