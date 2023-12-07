@@ -95,3 +95,27 @@ header .cart-icon span{
 .shopCart .btn .close{
     background-color: bisque;
 }
+.shopCart .cartList .item img{
+    width: 100%;
+}
+.shopCart .cartList .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+.cartList .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cartList .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #555;
+}
+
