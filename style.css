@@ -67,3 +67,31 @@ header .cart-icon span{
     cursor: pointer;
     border: none;
 }
+.shopCart{
+    width: 400px;
+    background-color: #353432;
+    color: white;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+.shopCart h1{
+    padding: 20px;
+    margin:0;
+    font-weight: 300;
+}
+.shopCart .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.shopCart .btn button{
+    background-color: aqua;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 500;
+}
+.shopCart .btn .close{
+    background-color: bisque;
+}
