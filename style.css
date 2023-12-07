@@ -10,13 +10,16 @@ font-family: 'Poppins', sans-serif; */
     max-width: 90vw;
     margin: auto;
     text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
 }
 svg{
-    width: 40px;
+    width: 30px;
 }
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0;  
 }
 header .cart-icon{
@@ -72,9 +75,16 @@ header .cart-icon span{
     background-color: #353432;
     color: white;
     position: fixed;
-    inset: 0 0 0 auto;
+    inset: 0 -400px 0 auto;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+.body .showCart .shopCart{
+    inset: 0 0 0 auto;
+}
+.body .showCart .container{
+    transform: translateX(0.5s);
 }
 .shopCart h1{
     padding: 20px;
@@ -116,6 +126,9 @@ header .cart-icon span{
 }
 .cartList .quantity span:nth-child(2){
     background-color: transparent;
-    color: #555;
+    color: #eee;
+}
+.cartList{
+    overflow: auto;
 }
 
