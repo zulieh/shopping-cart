@@ -19,14 +19,27 @@ header{
     justify-content: space-between;
     padding: 20px 0;  
 }
+header .cart-icon{
+    position: relative;
+}
 header .cart-icon span{
-    display: block;
+    display: flex;
     width: 30px;
     height: 30px;
     background-color: red;
     color: white;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 50%;
     position: absolute;
+    top: 50%;
+    right: -20%;
+}
+.productList{
+    display: grid;
+
+}
+.productList .item img{
+  width: 90px;
+  filter: drop-shadow(0 50px 20px #0009);
 }
