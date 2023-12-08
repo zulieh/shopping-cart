@@ -80,11 +80,11 @@ header .cart-icon span{
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
 }
-.body .showCart .shopCart{
+body.showCart .shopCart{
     inset: 0 0 0 auto;
 }
-.body .showCart .container{
-    transform: translateX(0.5s);
+body.showCart .container{
+    transform: translateX(-250px);
 }
 .shopCart h1{
     padding: 20px;
@@ -111,7 +111,7 @@ header .cart-icon span{
 .shopCart .cartList .item{
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
-    gap: 20px;
+    gap: 10px;
     text-align: center;
     align-items: center;
 }
@@ -128,7 +128,13 @@ header .cart-icon span{
     background-color: transparent;
     color: #eee;
 }
+.cartList .item:nth-child(even){
+    background-color: #eee1;
+}
 .cartList{
     overflow: auto;
+}
+.cartList::-webkit-scrollbar{
+    width: 0;
 }
 
