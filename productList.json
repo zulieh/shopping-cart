@@ -3,19 +3,19 @@
         "id": 1,
         "name": "Arm Chair",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 1,
         "name": "Arm Chair",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 1,
         "name": "Arm Chair",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 4,
@@ -27,48 +27,48 @@
         "id": 5,
         "name": "Arm Chair",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 6,
         "name": "Arm Chair",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 7,
         "name": "Arm Chair",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 8,
         "name": "Arm Chair",
         "price": 200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 9,
         "name": "Arm Chair",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 10,
         "name": "Arm Chair",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 11,
         "name": "Arm Chair",
         "price": 200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 12,
         "name": "Arm Chair",
         "price": 200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     }
 ]
