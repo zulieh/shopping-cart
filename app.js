@@ -60,26 +60,30 @@ const addToCart = (product_id) => {
 }
 const addCartToHTML = () =>{
     cartListHTML.innerHTML = '';
+    let totalQuantity = 0;
     if(carts.length > 0){
         carts.forEach(cart =>{
+            totalQuantity = totalQuantity + cart.quantity;
             let newCart = document.createElement('div');
             newCart.classList.add('item')
+    let productPosition = productList.findIndex((value) => value.id == cart.product_id)
+    let info = productList[productPosition]
             newCart.innerHTML = `
             <div class="images">
-            <img src=${cart.image} alt="">
+            <img src=${info.image} alt="">
                 </div>
-                <div class="name">${cart.name}</div>
-                <div class="totalPrice">£${cart.price}</div>
+                <div class="name">${info.name}</div>
+                <div class="totalPrice">£${info.price * cart.quantity}</div>
                 <div class="quantity">
                     <span class="minus"><</span>
-                    <span>1</span>
+                    <span>${cart.quantity}</span>
                     <span class="plus">></span>
                 </div>   
             `
             cartListHTML.appendChild(newCart);
-        })
-        
+        })   
     }
+    // cartIconSpan.innerText = totalQuantity;
 
 }
 
