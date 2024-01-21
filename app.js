@@ -17,7 +17,6 @@ closeCart.addEventListener('click', () => {
 
 const addDataToHTML = () => {
     productListHTML.innerHTML = '';
-    if(productList.length > 0){
         productList.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
@@ -31,7 +30,7 @@ const addDataToHTML = () => {
             `;
             productListHTML.appendChild(newProduct);
         })
-    }
+
 }
 productListHTML.addEventListener('click', (event) => {
     let clickPosition = event.target;
@@ -57,7 +56,11 @@ const addToCart = (product_id) => {
     }else {
         carts[productInCart].quantity =  carts[productInCart].quantity + 1;
     }
-    addCartToHTML();   
+    addCartToHTML();
+    addCartToMemory();  
+}
+const addCartToMemory = () =>{
+    localStorage.setItem('cart', JSON.stringify(carts));
 }
 const addCartToHTML = () => {
     cartListHTML.innerHTML = '';
@@ -66,12 +69,13 @@ const addCartToHTML = () => {
         carts.forEach(cart => {
             totalQuantity = totalQuantity + cart.quantity;
             let newCart = document.createElement('div');
-            newCart.classList.add('item')
+            newCart.classList.add('item');
     let productPosition = productList.findIndex((value) => value.id == cart.product_id)
     let info = productList[productPosition];
+    if (info && info.image && info.name && info.price) {
             newCart.innerHTML = `
             <div class="image">
-                <img src="${info.image}" alt="">
+                <img src=${info.image} alt="">
             </div>
             <div class="name">
                 ${info.name}
@@ -86,9 +90,14 @@ const addCartToHTML = () => {
             </div>   
             `;
             cartListHTML.appendChild(newCart);
-        })   
+        }
+        });  
     }
     spanCart.innerText = totalQuantity;
+};
+
+const removeFromCart = () => {
+    productListHTML.innerHTML = '';
 }
 
 const initApp = () => {

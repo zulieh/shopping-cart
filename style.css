@@ -61,6 +61,17 @@ header .cart-icon span{
     font-size: small;
     letter-spacing: 5px;
 }
+.productList .item .like{
+    display: flex;
+    justify-content: space-around;
+    
+    text-align: center;
+    align-items: center;
+}
+/* .productList .item .svg{
+   width: 30px;
+} */
+
 .productList .item button{
     background-color: #353432;
     color: #eeeee6;
@@ -110,7 +121,7 @@ body.showCart .container{
 }
 .shopCart .cartList .item{
     display: grid;
-    grid-template-columns: 70px 150px 50px 1fr;
+    grid-template-columns: 50px 170px 50px 100px 1fr;
     gap: 10px;
     text-align: center;
     align-items: center;

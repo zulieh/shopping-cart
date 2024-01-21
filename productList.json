@@ -6,34 +6,34 @@
         "image": "image/coffeetable.jpg"
     },
     {
-        "id": 1,
-        "name": "Arm Chair",
-        "price":  200,
-        "image": "image/coffeetable.jpg"
+        "id": 2,
+        "name": "Brown Chair",
+        "price":  600,
+        "image": "image/chair.jpg"
     },
     {
-        "id": 1,
-        "name": "Arm Chair",
-        "price":  200,
-        "image": "image/coffeetable.jpg"
+        "id": 3,
+        "name": "glass Chair",
+        "price":  100,
+        "image": "image/chair.jpg"
     },
     {
         "id": 4,
-        "name": "Arm Chair",
+        "name": "Light",
         "price":  200,
-        "image": "images/coffeetable.jpg"
+        "image": "image/coffeetable.jpg"
     },
     {
         "id": 5,
-        "name": "Arm Chair",
+        "name": "Chair",
         "price":  200,
-        "image": "image/coffeetable.jpg"
+        "image": "image/chair.jpg"
     },
     {
         "id": 6,
         "name": "Arm Chair",
         "price":  200,
-        "image": "image/coffeetable.jpg"
+        "image": "ima"
     },
     {
         "id": 7,
